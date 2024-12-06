@@ -29,7 +29,7 @@ import org.springframework.web.multipart.support.MultipartFilter;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     //白名单接口
-    private static final String[] ANONYMOUS_LIST = {"/api/login", "/api/code_login", "/api/register"};
+    private static final String[] ANONYMOUS_LIST = {"/api/login", "/api/code_login", "/api/register", "/common/upload"};
 
 
     private static final String[] PERMIT_LIST = {"/api/code", "/api/user/check", "/api/user/setPwd", "/api/adv/list", "/carbonReport/**"
