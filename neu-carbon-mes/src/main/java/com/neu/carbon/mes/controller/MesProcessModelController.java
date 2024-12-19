@@ -60,7 +60,7 @@ public class MesProcessModelController extends BaseController
         List<MesProcessModel> list = mesProcessModelService.selectMesProcessModelList(mesProcessModel);
         list.stream().forEach(model -> {
             Long materialId = model.getMaterialId();
-            if (materialId!= null) {
+            if (materialId!=null) {
                 WmsMaterialInfo material = wmsMaterialInfoService.selectWmsMaterialInfoById(materialId);
                 model.setMaterialCode(material.getCode());
                 model.setMaterialModel(material.getModel());

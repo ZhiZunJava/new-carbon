@@ -14,7 +14,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </resultMap>
 
     <sql id="selectMesProcessModelVo">
-        select id, process_name, description, power_consume, remark from mes_process_model
+        select id, material_id, process_name, description, power_consume, remark from mes_process_model
     </sql>
 
     <select id="selectMesProcessModelList" parameterType="MesProcessModel" resultMap="MesProcessModelResult">
